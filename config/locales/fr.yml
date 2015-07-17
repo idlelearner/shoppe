@@ -2,255 +2,255 @@ fr:
   activerecord:
     models:
       shoppe/country:
-        one: Country
-        other: Countries
+        one: Pays
+        other: Pays
       shoppe/delivery_service:
-        one: Delivery service
-        other: Delivery services
+        one: Service de Livraison
+        other: Services de Livraison
       shoppe/delivery_service_price:
-        one: Delivery service price
-        other: Delivery service prices
+        one: Tarif de Livraison
+        other: Tarif de Livraison
       shoppe/order:
-        one: Order
-        other: Orders
+        one: Commande
+        other: Commandes
       shoppe/order_item:
-        one: Order item
-        other: Order items
+        one: Article commandé
+        other: Articles commandés
       shoppe/payment:
-        one: Payment
-        other: Payments
+        one: Paiement
+        other: Paiements
       shoppe/product:
-        one: Product
-        other: Products
+        one: Produit
+        other: Produits
       shoppe/product_attribute:
-        one: Product attribute
-        other: Product attributes
+        one: Attribut
+        other: Attributs
       shoppe/product_category:
-        one: Product category
-        other: Product categories
+        one: Catégorie
+        other: Catégories
       shoppe/setting:
-        one: Setting
-        other: Settings
+        one: Paramètre
+        other: Paramètres
       shoppe/stock_level_adjustment:
-        one: Stock Level Adjustment
-        other: Stock Level Adjustments
+        one: Ajustement Niveau de Stock
+        other: Ajustements Niveau de Stock
       shoppe/tax_rate:
-        one: Tax Rate
-        other: Tax Rates
+        one: Taxe
+        other: Taxe
       shoppe/user:
-        one: User
-        other: Users
+        one: Utilisateur
+        other: Utilisateurs
 
     attributes:
       shoppe/order:
-        billing_address1: Billing address1
-        billing_address3: Billing address3
-        billing_address4: Billing address4
-        billing_country: Billing country
-        billing_postcode: Billing postcode
-        delivery_address1: Delivery address1
-        delivery_address3: Delivery address3
-        delivery_address4: Delivery address4
-        delivery_country: Delivery country
-        delivery_name: Delivery name
-        delivery_service_id: Delivery service
-        delivery_postcode: Delivery postcode
-        email_address: E-Mail address
-        first_name: First name
-        last_name: Last name
-        phone_number: Phone number
-        status: Status
+        billing_address1: Adresse de facturation1
+        billing_address3: Adresse de facturation3
+        billing_address4: Adresse de facturation4
+        billing_country: Pays de facturation
+        billing_postcode: Code postal de facturation
+        delivery_address1: Adresse de livraison1
+        delivery_address3: Adresse de livraison3
+        delivery_address4: Adresse de livraison4
+        delivery_country: Pays de livraison
+        delivery_name: Nom de livraison
+        delivery_service_id: Service de livraison
+        delivery_postcode: Code postal de livraison
+        email_address: Adresse mail
+        first_name: Prénom
+        last_name: Nom de famille
+        phone_number: Numéro de téléphone
+        status: Etat
         token: Token
       shoppe/country:
-        name: Name
+        name: Nom
       shoppe/delivery_service:
-        name: Name
-        courier: Courier
+        name: Nom
+        courier: Transporteur
       shoppe/delivery_service_price:
         code: Code
-        cost_price: Cost price
-        max_weight: Max weight
-        min_weight: Min weight
-        price: Price
+        cost_price: Prix coûtant
+        max_weight: Max.
+        min_weight: Min.
+        price: Prix
       shoppe/order_item:
-        ordered_item: Ordered Item
-        quantity: Quantity
+        ordered_item: Article commandé
+        quantity: Quantité
       shoppe/payment:
-        amount: Amount
-        method: Method
-        reference: Reference
+        amount: Montant
+        method: Méthode
+        reference: Référence
       shoppe/product:
-        cost_price: Cost price
+        cost_price: Prix coûtant
         description: Description
-        name: Name
+        name: Nom
         permalink: Permalink
-        price: Price
-        short_description: Short description
+        price: Prix
+        short_description: Courte description
         sku: SKU
-        weight: Weight
+        weight: Poids
       shoppe/product_attribute:
-        key: Key
+        key: Clé
       shoppe/product_category:
-        name: Name
+        name: Nom
         permalink: Permalink
       shoppe/setting:
-        key: Key
+        key: Clé
         value: Value
-        value_type: Value type
+        value_type: Type de value
       shoppe/stock_level_adjustment:
-        adjustment: Adjustment
+        adjustment: Ajustement
         description: Description
-        must_be_greater_or_equal_zero: must be greater or less than zero
+        must_be_greater_or_equal_zero: Doit être supérieur ou inférieur à zéro
       shoppe/tax_rate:
-        address_type: Address type
-        name: Name
-        rate: Rate
+        address_type: Type d'adresse
+        name: Nom
+        rate: Taux
       shoppe/user:
-        email_address: E-Mail address
-        first_name: First name
-        last_name: Last name
-        password: Password
-        password_confirmation: Password confirmation
+        email_address: Adresse mail
+        first_name: Prénom
+        last_name: Nom de famille
+        password: Mot de passe
+        password_confirmation: Confirmation
     errors:
       template:
-        body: ! 'There were problems with the following fields:'
+        body: ! 'Il y a des erreurs concernant les champs suivants:'
         header:
-          one: 1 error prohibited this %{model} from being saved
-          many: ! '%{count} errors prohibited this %{model} from being saved'
-          other: ! '%{count} errors prohibited this %{model} from being saved'
+          one: 1 erreur empêche ce modèle %{model} à la sauvegarde
+          many: ! '%{count} erreurs empêchent ce modèle %{model} à la sauvegarde'
+          other: ! '%{count} erreurs empêchent ce modèle %{model} à la sauvegarde'
       models:
         shoppe/product_category:
           attributes:
             permalink:
-              wrong_format: "can only contain letters, numbers, - and _"
+              wrong_format: "ne peut contenir que des numéros, des lettres, et les caractères '-' et '_'"
         shoppe/delivery:
           attributes:
             delivery_service_id:
-              must_be_specified: must be specified
-              not_suitable: is not suitable for this order
+              must_be_specified: faut d'être spécifié
+              not_suitable: est inacceptable pour cette commande
         shoppe/order:
           attributes:
             delivery_service_id:
-              must_be_specified: Must be specified
+              must_be_specified: faut d'être spécifié
         shoppe/product:
           attributes:
             permalink:
-              wrong_format: "can only contain letters, numbers, - and _"
+              wrong_format: "ne peut contenir que des numéros, des lettres, et les caractères '-' et '_'"
             base:
-              can_belong_to_root: can only belong to a root product
+              can_belong_to_root: ne peut appartenir qu'à un produit de racine
         shoppe/order_item:
           attributes:
             quantity:
-              too_high_quantity: is too high for the quantity in stock
+              too_high_quantity: est trop élevé pour la quantité en stock
         shoppe/payment:
-          refund_failed: "Refunds must be less than the payment (%{refundable_amount})"
+          refund_failed: "Remboursement doit être inférieur que le montant de paiement (%{refundable_amount})"
 
   will_paginate:
-    next_label: "Next &#8594;"
+    next_label: "Suivant &#8594;"
     page_gap: "&hellip;"
-    previous_label: "&#8592; Previous"
+    previous_label: "&#8592; Précédent"
 
     page_entries_info:
 
       single_page:
-        zero:  "No %{model} found"
-        one:   "Displaying 1 %{model}"
-        other: "Displaying all %{count} %{model}"
+        zero:  "%{model} non trouvé"
+        one:   "Affiche 1 %{model}"
+        other: "Affiche tous %{count} %{model}"
 
       single_page_html:
-        zero:  "No %{model} found"
-        one_html:   "Displaying <b>1</b> %{model}"
-        other_html: "Displaying <b>all&nbsp;%{count}</b> %{model}"
+        zero:  "%{model} non trouvé"
+        one_html:   "Affiche <b>1</b> %{model}"
+        other_html: "Affiche <b>tous&nbsp;%{count}</b> %{model}"
 
-      multi_page: "Displaying %{model} %{from} - %{to} of %{count} in total"
-      multi_page_html: "Displaying %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> of <b>%{count}</b> in total"
+      multi_page: "Affiche %{model} %{from} - %{to} de %{count} au total"
+      multi_page_html: "Affiche %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> de <b>%{count}</b> au total"
 
   helpers:
     number_to_weight:
       kg: kg
     page_entries_info:
       one_page:
-        display_entries: Display Entries
+        display_entries: Affiché par catégorie
     attachment_preview:
-      delete: Delete
-      delete_confirm: Are you sure you wish to remove this attachment?
-      no_attachment: No attachment
+      delete: Supprimer
+      delete_confirm: Voulez vous vraiment supprimer la pièce jointe?
+      no_attachment: Aucune pièce jointe
 
   shoppe:
 
     # common
-    cancel: Cancel
-    close: Close
-    delete: Delete
-    edit: Edit
-    import: Import
-    remove: Remove
+    cancel: Annuler
+    close: Fermer
+    delete: Supprimer
+    edit: Editer
+    import: Importer
+    remove: Effacer
 
-    removed_it: "%{it} has been removed successfully"
-    save_settings: Save Settings
-    separate_delivery_address: Separate delivery address
-    service_available: Service will be available for use
-    service_default: Service will be used by default (if possible)
-    settings_title: Settings
-    settings_not_in_demo: You cannot make changes to settings in demo mode. Sorry about that.
-    set_prices: Set Prices
-    shoppe_back: Back to Shoppe
+    removed_it: "%{it} a été effacé(e) avec succès"
+    save_settings: Enregistrer les paramètres
+    separate_delivery_address: Séparer l'adresse de livraison
+    service_available: Service pourra être utilisé
+    service_default: Service sera utilisé par défaut (si possible)
+    settings_title: Paramètre
+    settings_not_in_demo: Vous ne pouvez pas apporter de modification en mode de démonstration. Nous somme désolés.
+    set_prices: Fixer les prix
+    shoppe_back: Revenir sur Shoppe
     sku: SKU
-    status: Status
+    status: Etat
     stock: Stock
-    stock_current: Current stock level is
-    stock_control: Stock Control
-    stock_control_enable: Enable stock control for this product?
-    stock_levels: Stock levels
-    stock_levels_for: Stock levels %{item}
-    stock_none: No stock
-    system_settings: System settings
-    tax_rate: Tax rate
+    stock_current: Le niveau actuel de stock est
+    stock_control: Gestion de stock
+    stock_control_enable: Autoriser la gestion de stock pour ce produit?
+    stock_levels: Niveau de stock
+    stock_levels_for: Niveaux de stock %{item}
+    stock_none: Aucun stock
+    system_settings: Paramètres du système
+    tax_rate: Taxe
     tax_rate_apply_to: Apply to orders where the %{to} matches one of the countries below
-    tax_rate_delete_confirm: Are you sure you wish to remove this tax_rate?
-    tax_rate_details: Rate Details
-    tax_rate_new: New tax rate
+    tax_rate_delete_confirm: Voulez vous vraiment effacer ce taux d'impôt?
+    tax_rate_details: Détails du taux
+    tax_rate_new: Nouveau Taxe
     tax_rate_note: Do NOT edit tax rates that are already in use.
       Care should be taken when editing tax rates, as this may affect existing orders.
       while creating a new tax rate, you must delete it and create a new one. When you delete a tax rate
       it is not removed from the system, only deactivated, so existing orders stay unaffected.
-    tax_rates: Tax Rates
-    tax_rates_back: Back to tax rates
-    tax_none: No tax
-    telephone: Telephone
+    tax_rates: Taxe
+    tax_rates_back: Revenir sur Taux
+    tax_none: Aucun Taux
+    telephone: Téléphone
     total: Total
-    total_weight: Total weight
-    tracking_url: Tracking URL
-    unknown: Unknown
-    updated_it: "%{it} has been updated successfully"
-    users: Users
-    users_back: Back to users
-    user_delete_confirm: Are you sure you wish to remove this user?
-    user_details: User Details
-    user: User
-    user_edit: Edit user
-    user_new: New User
-    user_not_in_demo: You cannot make changes to users in demo mode. Sorry about that.
-    user_not_yourself: You cannot remove yourself
-    variants: Variants
-    variants_back: Back to variants
-    variants_of: Variants of %{product}
-    variant_delete_confirm: Are you sure you wish to remove this variant?
-    variant_of: Variant of %{product}
-    variant_new: New variant
-    variant_save: Save Variant
+    total_weight: Poids total
+    tracking_url: URL suivi
+    unknown: Inconnu
+    updated_it: "%{it} a été mis à jour avec succès."
+    users: Utilisateurs
+    users_back: Revenir sur Utilisateurs
+    user_delete_confirm: Voulez vous vraiment effacer cet utilisateur?
+    user_details: Détails Utilisateur
+    user: Utilisateur
+    user_edit: Editer utilisateur
+    user_new: Nouveau utilisateur
+    user_not_in_demo: Vous ne pouvez pas apporter de modification en mode de démonstration. Nous somme désolés.
+    user_not_yourself: Vous ne pouvez pas supprimer votre compte
+    variants: Variantes
+    variants_back: Revenir sur Variants
+    variants_of: Variantes de %{product}
+    variant_delete_confirm: Voulez vous vraiment supprimer cette variante?
+    variant_of: Variante de %{product}
+    variant_new: Nouvelle variante
+    variant_save: Sauver Variante
     value: Value
-    website_properties: Website Properties
-    weight: Weight
-    weight_allowance: Weight Allowance
+    website_properties: Propriétés du site Web
+    weight: Poids
+    weight_allowance: Poids autorisé
 
-    submit: Submit
+    submit: Soumettre
 
     attachments:
-      remove_notice: Attachment removed successfully
+      remove_notice: Pièce jointe supprimée
 
     countries:
-      back: Back to countries
+      back: Revenir sur Zone de livraison
       continent: Continent
       countries: Countries
       country_details: Country details
@@ -296,227 +296,227 @@ fr:
     delivery_services:
       active?: Active?
       active: Active
-      active_info: Service will be available for use
-      back: Back to delivery services
+      active_info: Service pourra être utilisé
+      back: Revenir sur Services de livraison
       code: Code
-      courier: Courier
-      courier_name: Courier name
-      create_notice: Delivery Service has been created successfully
-      default?: Default?
-      default: Default
-      default_info: Service will be used by default (if possible)
-      delivery_services: Delivery Services
-      destroy_notice: Delivery Service has been removed successfully
-      delete_confirmation: Are you sure you wish to remove this delivery service?
-      details: Details
-      name: Name
-      new: New delivery service
-      no_services: No delivery services to display.
-      prices: Prices
-      set_prices: Set Prices
-      tracking_url: Tracking URL
-      tracking_url_help_html: Use <code>{{consignment_number}}</code> to insert the consignment number.
-      update_notice: Delivery Service has been updated successfully
+      courier: Transporteur
+      courier_name: Nom du transporteur
+      create_notice: Service de livraison créé
+      default?: Défaut?
+      default: Défaut
+      default_info: Service sera utilisé par défaut (si possible)
+      delivery_services: Service de livraison
+      destroy_notice: Service de livraison supprimé
+      delete_confirmation: Voulez vous vraiment effacer ce service de livraison?
+      details: Détails
+      name: Nom
+      new: Nouveau service de livraison
+      no_services: Aucun service de livraison.
+      prices: Prix
+      set_prices: Fixer les prix
+      tracking_url: URL suivi
+      tracking_url_help_html: Utiliser <code>{{consignment_number}}</code> à insérer le numéro de consignation.
+      update_notice: Service de livraison mis à jour
 
     imports:
-      example_file: Example Format
-      file_upload: File for Import
-      required_formats: Must be csv, xls or xlsx.
+      example_file: Format par exemple
+      file_upload: Fichier à importer
+      required_formats: Il faut le format .csv, .xls ou .xlsx.
       errors:
-        no_file: No file chosen for import
-        unknown_format: "Unknown file format: %{filename}"
+        no_file: Aucun fichier
+        unknown_format: "Format inconnu: %{filename}"
 
     orders:
-      accept: Accept
-      accept_notice: Order has been accepted successfully
-      add_payment: Add payment
-      add_item: Add an item
-      address: Address
-      amount: Amount
-      back_to_order: Back to order
-      back_to_orders: Back to orders
-      billing_address: Billing Address
-      billing_delivery_address: Billing/Delivery Address
-      build_time: Build time
-      company: Company
-      consignment_number: Consignment Number
-      cost: Cost
-      country: Country
-      create_order: Create order
-      create_notice: Order has been created successfully
-      customer: Customer
-      delivery_address: Delivery address
-      delivery_name: Delivery name
-      edit_order: Edit order
-      email_address: E-Mail address
-      first_name: First name
-      from_payment: from payment
+      accept: Accepter
+      accept_notice: Commande accepté
+      add_payment: Ajouter paiement
+      add_item: Ajouter un article
+      address: Adresse
+      amount: Montant
+      back_to_order: Revenir sur Commande
+      back_to_orders: Revenir sur Commandes
+      billing_address: Adresse de facturation
+      billing_delivery_address: Adresse de facturation/livraison
+      build_time: Temps créé
+      company: Companie
+      consignment_number: Numéro de consignation
+      cost: Coût
+      country: Pays
+      create_order: Créer commande
+      create_notice: Commande créée
+      customer: Client
+      delivery_address: Adresse de livraison
+      delivery_name: Nom de livraison
+      edit_order: Editer commande
+      email_address: Adresse mail
+      first_name: Prénom
+      from_payment: du paiement
       id: ID
-      in_progress_warning: This order is still being built by the customer in your store. At present you can only view the items which are within the order.
-      invoice_number: Invoice number
-      insufficient_stock_order: "Insufficient stock to order %{out_of_stock_items}. Quantities have been updated to max total stock available."
-      item: Item
-      last_name: Last name
-      mark_as_shipped: Mark as shipped
-      method: Method
-      missing_delivery_service: No suitable delivery service available, order cannot be created without an associated delivery service.
-      name: Name
-      new_order: New order
-      no_delivery_required: No delivery required for this order.
-      no_orders: No orders to display.
-      no_payments: There are no payments recorded for this order...
-      notes: Notes
-      number: Number
-      order: Order
-      order_accepted: Order Accepted
-      order_balance: Order Balance
-      order_items: Order items
-      order_no_html: "Order <b>#%{order_number}</b>"
-      order_number: Order number
-      order_received: Order Received
-      order_rejected: Order Rejected
-      order_shipped: Order Shipped
-      ordered_products: Ordered products
+      in_progress_warning: La commande est en cours de création par votre client. Vous ne pouvez consulter que les articles dans la commande maintenant.
+      invoice_number: Numéro de facture
+      insufficient_stock_order: "Stock insuffisant pour la commande %{out_of_stock_items}. Les quantités ont été mis à jour au niveau maximum du stock."
+      item: Article
+      last_name: Nom de famille
+      mark_as_shipped: Noter comme délivré
+      method: Méthode
+      missing_delivery_service: Aucun service de livraison disponible, la commande ne peut pas être créée sans un service de livraison validé.
+      name: Nom
+      new_order: Nouvelle commande
+      no_delivery_required: Aucun service de livraison requis pour cette commande.
+      no_orders: Aucune commande.
+      no_payments: Pas de paiement enregistré pour cette commande...
+      notes: Remarques
+      number: Numéro
+      order: Commande
+      order_accepted: Commande acceptée
+      order_balance: Solde
+      order_items: Articles
+      order_no_html: "Commande <b>#%{order_number}</b>"
+      order_number: Commande numéro
+      order_received: Commande reçue
+      order_rejected: Commande rejetée
+      order_shipped: Commande expédiée
+      ordered_products: Produits commandés
 
-      orders: Orders
-      payment: Payment
-      payment_remove_confirmation: Are you sure you wish to remove this payment?
-      payments: Payments
-      phone_number: Phone number
-      post_code: Post code
-      price: Price
-      product: Product
-      products: Products
-      qty: Qty
-      quantity: Quantity
-      received_between: Received between
-      reference: Reference
-      refund: Refund
-      refunded?: Refunded?
-      reject: Reject
-      reject_notice: Order has been rejected successfully
-      save_order: Save order
-      search: Search
-      search_orders: Search orders
-      select_country: Select a country
-      customer: Customer
-      select_customer: Select a customer or leave blank
-      separate_delivery_address: Separate delivery address
-      ship_notice: Order has been shipped successfully
+      orders: Commandes
+      payment: Paiement
+      payment_remove_confirmation: Voulez vous vraiment effacer ce paiement?
+      payments: Paiements
+      phone_number: Numéro de téléphone
+      post_code: Code postal
+      price: Prix
+      product: Produit
+      products: Produits
+      qty: Qté
+      quantity: Quantité
+      received_between: Reçue entre
+      reference: Référence
+      refund: Remboursement
+      refunded?: Remboursé?
+      reject: Rejeté
+      reject_notice: Commande rejetée
+      save_order: Sauver Commande
+      search: Recherche
+      search_orders: Recherche commandes
+      select_country: Sélectionner un pays
+      customer: Client
+      select_customer: Sélectionner un client ou laisser le champ vide
+      separate_delivery_address: Séparer Adresse de livraison
+      ship_notice: Commande expédiée
       sku: SKU
-      sla_warning: Any changes to quantities will update the appropriate stock levels for the associated product.
-      status: Status
+      sla_warning: Tout changement aux quantités fera une mise à jour aux niveaux de stock pour le produit associé.
+      status: Etat
       stock: Stock
-      sub_total: Sub-Total
-      tax: Tax
+      sub_total: Sous-Total
+      tax: Taxe
       telephone: Telephone
       total: Total
       type: Type
-      unit_price: Unit price
-      update_notice: Order has been saved successfully
-      use_separate_delivery_address?: Use a separate delivery address?
-      weight: Weight
+      unit_price: Prix unitaire
+      update_notice: Commande enregistrée
+      use_separate_delivery_address?: Adresse de livraison séparée?
+      weight: Poids
 
       status_bar:
-        by_user: "by %{user}"
-        consignment_no_html: "Consignment #<b>%{consignment_number}</b>"
-        from_ip: "from %{ip}"
-        on_date: "on %{on}"
-        tracking_url:  Tracking URL
+        by_user: "par %{user}"
+        consignment_no_html: "Consignation #<b>%{consignment_number}</b>"
+        from_ip: "de %{ip}"
+        on_date: "le %{on}"
+        tracking_url: URL suivi
 
       despatch_note:
-        despatch_note: Despatch note
-        footer: Thank you for your order!
-        order_number: Order number
-        order_placed: Order placed
-        packed?: Packed?
-        product: Product
-        quantity: Quantity
+        despatch_note: Avis d'expédition
+        footer: Merci d'avoir passé commande chez nous!
+        order_number: Numéro commande
+        order_placed: Commande passée
+        packed?: Emballé(e)?
+        product: Produit
+        quantity: Quantité
         sku: SKU
-        telephone: Telephone
-        total_weight: Total weight
-        weight: Weight
+        telephone: Téléphone
+        total_weight: Poids total
+        weight: Poids
 
       statuses:
-        accepted: Accepted
-        building: Building
-        confirming: Confirming
-        received: Received
-        rejected: Rejected
-        shipped: Shipped
+        accepted: Accepté
+        building: Création
+        confirming: Confirmation
+        received: Reçue
+        rejected: Rejeté
+        shipped: Expédié
 
     product_category:
-      attachments: Attachments
-      back_to_categories: Back to categories list
-      category_details: Category Details
-      choose_product_category: Choose a product category
-      create_notice: Category has been created successfully
-      delete_confirmation:  Are you sure you wish to remove this category?
+      attachments: Pièces jointes
+      back_to_categories: Revenir sur Catégories
+      category_details: Détails catégorie
+      choose_product_category: Sélectionner une catégorie de produit
+      create_notice: Catégorie de produit créée
+      delete_confirmation: Voulez vous vraiment supprimer cette catégorie?
       description: Description
-      destroy_notice: Category has been removed successfully
-      destroy_alert: Category could not be removed
+      destroy_notice: Catégorie supprimée
+      destroy_alert: Catégorie ne peut pas être supprimée
       image: Image
-      name: Name
-      new_category: New category
-      no_categories: No categories to display.
+      name: Nom
+      new_category: Nouvelle catégorie
+      no_categories: Aucune catégorie.
       permalink: Permalink
-      permalink_includes_ancestors: Prefix links in store with ancestor categories
-      product_categories: Product categories
-      update_notice: Category has been updated successfully
+      permalink_includes_ancestors: Préfixer les liens avec les catégories ancêtres dans la boutique
+      product_categories: Catégories de produit
+      update_notice: Catégorie a été mis à jour
       nesting:
-        blank_option: None
-        category_nesting: Nesting
+        blank_option: Aucun
+        category_nesting: Nidification
         category_parent: Parent
-        current_category: Current
-        no_children: No Children
-        hierarchy: Hierarchy
+        current_category: Actuel
+        no_children: Aucune déscendance
+        hierarchy: Hiérarchie
 
     products:
-      add_attachments: View/add attachments
-      add_attribute: Add attribute
-      attachments: Attachments
-      attributes: Attributes
-      back_to_products: Back to product list
-      cost_price: Cost price
-      create_notice: Product has been created successfully
-      datasheet: Datasheet
-      default_image: Default Image
+      add_attachments: Afficher/ajouter de pièces joints
+      add_attribute: Ajouter attribut
+      attachments: Pièces jointes
+      attributes: Attributs
+      back_to_products: Revenir sur Produits
+      cost_price: Prix coûtant
+      create_notice: Produit créé
+      datasheet: Fiche technique
+      default_image: Image par défaut
       description: Description
-      destroy_notice: Product has been removed successfully
-      edit: Edit
-      enable_stock_control?:  Enable stock control for this product?
-      featured?: Featured?
-      featured_info:  If checked, this product will appear on your homepage
-      import_products: Import products
-      in_the_box: "What's in the box?"
-      name: Name
-      new_product: New product
-      no_products: No products to display.
-      no_stock: No stock
-      no_tax: No tax
-      on_sale?: On sale?
-      on_sale_info:  If checked, this product will be displayed within the public store
+      destroy_notice: Produit supprimé
+      edit: Editer
+      enable_stock_control?: Autoriser la gestion de stock pour ce produit?
+      featured?: En vedette?
+      featured_info:  Coché pour que ce produit apparaisse dans la page d'accueil
+      import_products: Importer produits
+      in_the_box: "Que contient la boîte?"
+      name: Nom
+      new_product: Nouveau produit
+      no_products: Aucun produit.
+      no_stock: Aucun stock
+      no_tax: Aucun taxe
+      on_sale?: A vendre?
+      on_sale_info:  Coché pour que ce produit apparaisse dans la boutique
       permalink: Permalink
-      price: Price
-      price_variants: Price/Variants
-      pricing: Pricing
-      product_category: Product category
-      product_information: Product Information
-      products: Products
+      price: Prix
+      price_variants: Prix/Variantes
+      pricing: Tarif
+      product_category: Catégorie de produit
+      product_information: Information de produit
+      products: Produits
       public?: Public?
-      remove: Remove
-      searchable?: Searchable?
-      short_description: Short description
+      remove: Effacer
+      searchable?: Consultable?
+      short_description: Courte description
       sku: SKU
       stock: Stock
-      stock_control: Stock Control
-      stock_levels: Stock levels
-      tax_rate: Tax rate
+      stock_control: Gestion de stock
+      stock_levels: Niveaux de stock
+      tax_rate: Taxe
       value: Value
-      variants: Variants
-      update_notice: Product has been updated successfully
-      website_properties: Website Properties
-      weight: Weight
+      variants: Variantes
+      update_notice: Produit a été mis à jour
+      website_properties: Propriétés du site Web
+      weight: Poids
 
       imports:
         help: Products and Categories are matched by name.  If no product is found, a new one will be created with all the attributes on the line.  If a product is found, only the quantity will be updated and all other fields will be ignored.  If no category is found, one with that name will be created .  One product per line. You can leave permalink field empty if you don't want to add one and to be generated automatically.
@@ -572,22 +572,22 @@ fr:
       reset_notice: "An e-mail has been sent to %{email_address} with a new password"
 
     shared:
-      back_to_shoppe: Back to Shoppe
-      error: Error
-      error_occurred: An error has occurred
+      back_to_shoppe: Revenir sur Shoppe
+      error: Erreur
+      error_occurred: Une erreur s'est produite
 
     stock_level_adjustments:
-      add: Add
-      adjustment: Adjustment
-      back_to_product: Back to product list
-      create_notice: Adjustment has been added successfully
-      current_stock_level_html: "Current stock level is <b>%{item_stock}</b>"
+      add: Ajouter
+      adjustment: Ajustement
+      back_to_product: Revenir sur Produits
+      create_notice: Ajustement ajouté
+      current_stock_level_html: "Niveau de stock actuel est <b>%{item_stock}</b>"
       date: Date
       description: Description
-      edit_product: Edit product
-      invalid_item_type: "Invalid item_type (must be one of %{suitable_objects})"
-      stock_levels_for: "Stock Levels for %{item_name}"
-      stock_levels_title: "Stock Levels - %{item_name}"
+      edit_product: Editer produit
+      invalid_item_type: "Invalide item_type (doit être un des %{suitable_objects})"
+      stock_levels_for: "Niveaux de stock pour %{item_name}"
+      stock_levels_title: "Niveaux de stock - %{item_name}"
 
     tax_rates:
       address_type_option: "Apply to orders where the %{address} address matches one of the countries below"
