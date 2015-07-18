@@ -238,7 +238,7 @@ fr:
     variant_delete_confirm: Voulez vous vraiment supprimer cette variante?
     variant_of: Variante de %{product}
     variant_new: Nouvelle variante
-    variant_save: Sauver Variante
+    variant_save: Enregistrer Variante
     value: Value
     website_properties: Propriétés du site Web
     weight: Poids
@@ -395,7 +395,7 @@ fr:
       refunded?: Remboursé?
       reject: Rejeté
       reject_notice: Commande rejetée
-      save_order: Sauver Commande
+      save_order: Enregistrer Commande
       search: Recherche
       search_orders: Recherche commandes
       select_country: Sélectionner un pays
@@ -591,133 +591,133 @@ fr:
 
     tax_rates:
       address_type_option: "Apply to orders where the %{address} address matches one of the countries below"
-      all_countries: All countries
-      back_to_tax_rates: Back to tax rates
-      billing: billing
-      country_restriction: Country Restriction
-      create_notice: Tax rate has been created successfully
-      delete_confirmation: Are you sure you wish to remove this tax rate?
-      delivery: delivery
-      destroy_notice: Tax rate has been removed successfully
-      name: Name
-      new_tax_rate: New tax rate
-      rate: Rate
-      rate_details: Rate Details
-      tax_rates: Tax Rates
-      update_notice: Tax rate has been updated successfully
+      all_countries: Toutes les zones de livraison
+      back_to_tax_rates: Revenir sur Taxe
+      billing: Facturation
+      country_restriction: Limitation région
+      create_notice: Taxe créée
+      delete_confirmation: Voulez vous vraiment supprimer cette taxe?
+      delivery: livraison
+      destroy_notice: Taxe supprimée
+      name: Nom
+      new_tax_rate: Nouvelle taxe
+      rate: Taux
+      rate_details: Détails taxes
+      tax_rates: Taux d'impôt
+      update_notice: Taux d'impôt a été mis à jour
 
     users:
-      back_to_users: Back to users
-      create_notice: User has been created successfully
-      delete_confirmation:  Are you sure you wish to remove this user?
-      demo_mode_error: You cannot make changes to users in demo mode. Sorry about that.
-      destroy_notice: User has been removed successfully
-      email: E-Mail Address
-      first_name: First name
-      last_name: Last name
+      back_to_users: Revenir sur Utilisateurs
+      create_notice: Utilisateur créé
+      delete_confirmation:  Voulez vous vraiment supprimer cet utilisateur?
+      demo_mode_error: Vous ne pouvez pas apporter de modification en mode de démostration. Nous somme désolés.
+      destroy_notice: Utilisateur supprimé
+      email: Adresse mail
+      first_name: Prénom
+      last_name: Nom de famille
       login: Login
-      name: Name
-      new_user: New user
-      password: Password
-      password_confirmation: ...and again
-      self_remove_error: You cannot remove yourself
-      update_notice: User has been updated successfully
-      user_details: User Details
-      users: Users
+      name: Nom
+      new_user: Nouveau utilisateur
+      password: Mot de passe
+      password_confirmation: Confirmation
+      self_remove_error: Vous ne pouvez pas effacer votre compte
+      update_notice: Utilisateur a été mis à jour
+      user_details: Détails Utilisateur
+      users: Utilisateurs
 
     variants:
-      back_to_variants: Back to variants
-      cost_price: Cost price
-      create_notice: Variant has been added successfully
-      default_variant?: Default variant?
-      default_variant_info: If checked, this variant will be the default
-      delete_confirmation: Are you sure you wish to remove this variant?
-      destroy_notice: Variant has been removed successfully
-      edit_product: Edit product
-      edit_variant: New variant
-      enable_stock_control?: Enable stock control for this product?
+      back_to_variants: Revenir sur Variantes
+      cost_price: Prix coûtant
+      create_notice: Variante ajoutée
+      default_variant?: Variante par défaut?
+      default_variant_info: Coché pour que cette variante soit défaut
+      delete_confirmation: Voulez vous vraiment supprimer cette variante?
+      destroy_notice: Variante supprimée
+      edit_product: Editer produit
+      edit_variant: Editer variante
+      enable_stock_control?: Autoriser la gestion de stock pour ce produit?
       image: Image
-      name: Name
-      no_products: No products to display.
-      no_stock: No stock
-      no_tax: No tax
-      new_variant: New variant
-      on_sale?: On sale?
-      on_sale_info: If checked, this product will be displayed within the public store
+      name: Nom
+      no_products: Aucun produit.
+      no_stock: Aucun stock
+      no_tax: Aucune taxe
+      new_variant: Nouvelle variante
+      on_sale?: A vendre?
+      on_sale_info: Coché pour que ce produit apparaisse dans la boutique
       permalink: Permalink
-      price: Price
-      pricing: Pricing
-      product_information: Product Information
-      save_variant: Save Variant
+      price: Prix
+      pricing: Tarif
+      product_information: Information produit
+      save_variant: Enregistrer Variante
       sku: SKU
       stock: Stock
-      stock_control: Stock Control
-      tax_rate: Tax rate
-      update_notice: Variant has been updated successfully
-      variants: Variants
-      variants_of: "Variants of %{product}"
-      website_properties: Website Properties
-      weight: Weight
+      stock_control: Gestion de stock
+      tax_rate: Taxe
+      update_notice: Variante a été mis à jour
+      variants: Variantes
+      variants_of: "Variantes de %{product}"
+      website_properties: Propriétés du site Web
+      weight: Poids
 
     payments:
-      create_notice: Payment has been added successfully
-      destroy_notice: Payment has been removed successfully
-      refund_notice: Refund has been processed successfully.
+      create_notice: Paiement créé
+      destroy_notice: Paiement supprimé
+      refund_notice: Remboursement traité.
 
     localisations:
-      localisations: Localisations
-      back: Back
-      back_to_localisations: Back
-      localisations_of: Localisations of %{name}
+      localisations: Localizations
+      back: Revenir
+      back_to_localisations: Revenir
+      localisations_of: Localizations de %{name}
       product_information: Product Information
-      locales: Locales
-      choose_locale: Please choose a locale
-      save_localisation: Save Localisation
-      new_localisation: New Localisation
-      edit_localisation: Edit Localisation
-      localisation_created: Localisation created successfully
-      localisation_updated: Localisation updated successfully
-      localisation_destroyed: Localisation destroyed successfully
-      language: Language
-      no_localisations: No localisations to display.
-      delete_confirmation: Are you sure?
+      locales: Localités
+      choose_locale: Sélectionner une localité
+      save_localisation: Enregistrer localization
+      new_localisation: Nouvelle Localization
+      edit_localisation: Editer Localization
+      localisation_created: Localization créée
+      localisation_updated: Localization a été mis à jour
+      localisation_destroyed: Localization supprimée
+      language: Langue
+      no_localisations: Aucune localization.
+      delete_confirmation: Etes-vous sûr?
 
     navigation:
       admin_primary:
-        customers: Customers
-        orders: Orders
-        products: Products
-        product_categories: Product Categories
-        delivery_services: Delivery Services
-        tax_rates: Tax Rates
-        users: Users
-        countries: Countries
-        settings: Settings
+        customers: Clients
+        orders: Commandes
+        products: Produits
+        product_categories: Catégories de produit
+        delivery_services: Service de livraison
+        tax_rates: Taxe
+        users: Utilisateurs
+        countries: Zones de livraison
+        settings: Paramètres
 
     settings:
 
-      settings: Settings
-      system_settings: System Settings
-      demo_mode_error: You cannot make changes to settings in demo mode. Sorry about that.
-      update_notice:  Settings have been updated successfully.
+      settings: Paramètres
+      system_settings: Paramètres du système
+      demo_mode_error: Vous ne pouvez pas apporter de modification en mode de démonstration. Nous somme désolés.
+      update_notice: Paramètre a été mis à jour.
 
       types:
         # Force certain settings to certain type
-        demo_mode: boolean
+        demo_mode: booléen
 
       labels:
         # Labels for fields go here
-        email_address: Store E-Mail Address
-        store_name: Store Name
-        currency_unit: Currency Unit
-        tax_name: Tax Name
-        demo_mode: Demo Mode
+        email_address: Adresse mail de la boutique
+        store_name: Nom de la boutique
+        currency_unit: Unité monétaire
+        tax_name: Nom taxe
+        demo_mode: Mode de démonstration
 
       options:
         # Options for boolean settings
         demo_mode:
-          affirmative: Enabled
-          negative: Disabled
+          affirmative: Activé
+          negative: Désactivé
 
       help:
         # Help text for individual fields
@@ -727,19 +727,19 @@ fr:
         store_name: This is the name of your store which will be used through the Shoppe admin interface as well as in the default outbound e-mail messages.
         tax_name: The name for "Tax" which will be displayed in your admin interface. Commonly replaced with VAT in European countries.
 
-      save_settings: Save Settings
-      page_title: Settings
+      save_settings: Enregistrer
+      page_title: Paramètres
 
       defaults:
-        currency_unit: $
+        currency_unit: €
         demo_mode: false
         email_address: sales@example.com
-        store_name: Widgets Inc.
-        tax_name: Tax
+        store_name: Eyelle Design.
+        tax_name: TVA
 
   layouts:
     shoppe:
       application:
-        goto: Goto
-        logged_in_as: "Logged in as %{user_name}"
-        logout: Logout
+        goto: Aller sur
+        logged_in_as: "Connecté comme %{user_name}"
+        logout: Déconnexion
