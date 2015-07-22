@@ -197,6 +197,13 @@ module Shoppe
       end
     end
 
+    def self.get_file(name, content_type = 'image/jpeg')
+      file = ActionDispatch::Http::UploadedFile.new(:tempfile => File.open(File.join(Rails.root, 'app', 'assets', 'images', name), 'rb'))
+      file.original_filename = name
+      file.content_type = content_type
+      file
+    end
+
     private
 
     # Validates
