@@ -2,7 +2,7 @@ module Shoppe
   class Address < ActiveRecord::Base
 
     # An array of all the available types for an address
-    TYPES = ["billing", "delivery"]
+    TYPES = ["livraison", "facturation"]
 
     # Set the table name
     self.table_name = "shoppe_addresses"
@@ -25,19 +25,18 @@ module Shoppe
     # Validations
     validates :address_type, :presence => true, :inclusion => {:in => TYPES}
     validates :address1, :presence => true
-    validates :address2, :presence => true
-    validates :address3, :presence => true
+    validates :address4, :presence => true
     validates :postcode, :presence => true
     validates :country, :presence => true
 
     # All addresses ordered by their id asending
     scope :ordered, -> { order(:id => :desc)}
     scope :default, -> { where(default: true)}
-    scope :billing, -> { where(address_type: "billing")}
-    scope :delivery, -> { where(address_type: "delivery")}
+    scope :billing, -> { where(address_type: "facturation")}
+    scope :delivery, -> { where(address_type: "livraison")}
 
     def full_address
-      [address1, address2, address3, address4, postcode, country.try(:name)].join(", ")
+      [address1, address2, address3, address4, postcode, country.try(:name)].join(" ")
     end
 
   end
